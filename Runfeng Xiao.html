@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<!--npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch-->
+<!--<button onclick="alert('Hello!')">Click Me</button>javascript-->
+<html>
+
+<head>
+    <title>wellwell wu</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/6d56e3fd24.js" crossorigin="anonymous"></script>
+
+    <style>
+        body {
+            margin: 0;
+            background-color: #fefefe;
+            font-family: 'Open Sans', sans-serif;
+            color: #333;
+        }
+
+        h1 {
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            border-bottom: 1px solid #ddd;
+            background-color: #fff;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .nav a {
+            text-decoration: none;
+            color: #333;
+            margin-left: 15px;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .nav a:hover {
+            color: #0077b5;
+
+        }
+
+        .main {
+            padding-top: 70px;
+
+            display: grid;
+            grid-template-columns: 1fr minmax(300px, 1000px) 1fr;
+        }
+
+        .content {
+            grid-column: 2;
+            padding: 20px;
+        }
+
+        .Hi {
+            padding: 40px 0 180px 0;
+            font-size: 22px;
+            line-height: 1.9;
+
+        }
+
+        .resume_link {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #0077b5;
+            color: white;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        .resume_link:hover {
+            background-color: #005f8c;
+        }
+
+        .icons a {
+            margin-right: 15px;
+            color: #333;
+            transition: color 0.3s ease;
+        }
+
+        .icons a:hover {
+            color: #0077b5;
+        }
+
+        .project {
+            margin-bottom: 80px;
+        }
+
+        .tags {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+            margin-top: 30px;
+        }
+
+        .project-tag {
+
+            background-color: #f5f5f5;
+            display: flex;
+            flex-direction: column;
+            border-radius: 10px;
+            box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .project-tag-head {
+            background-color: #BBDCE5;
+            height: 80px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+
+        }
+
+        .project-tag-head h2 {
+            margin: 0;
+            font-size: 18px;
+        }
+
+        .project-tag-head p {
+            margin: 0;
+            font-size: 14px;
+            color: #555;
+        }
+
+        .project-tag-body {
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+            padding: 15px;
+        }
+
+        .project-tag-body p {
+            margin-bottom: 10px;
+            word-wrap: break-word;
+            overflow-wrap: anywhere;
+            padding-bottom: 15px;
+        }
+
+        .project-tag-body button {
+            margin-top: auto;
+            border: none;
+            height: 40px;
+            cursor: pointer;
+            background-color: #26667F;
+            color: white;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        .project-tag-body button:hover {
+            background-color: #005f8c;
+            transform: scale(1.05);
+        }
+
+        .skills {
+
+            line-height: 3;
+
+        }
+
+        .skills i {
+            margin-right: 8px;
+            font-size: 20px;
+            width: 25px;
+            text-align: center;
+        }
+
+        .education {
+            line-height: 3;
+        }
+
+        #project {
+            scroll-margin-top: 80px;
+        }
+
+        #about {
+            scroll-margin-top: 200px;
+        }
+
+        #skills {
+            scroll-margin-top: 80px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+
+    <nav class="nav">
+        <div class="left">
+            <p>Runfeng Xiao</p>
+        </div>
+
+        <div class="right">
+            <a href="#about">About Me</a>
+            <a href="#project">My Projects</a>
+            <a href="#skills">My Skills</a>
+            <a href="#education">My Education</a>
+            <a href="mailto:chunh@gmail.com">Contact Me</a>
+
+        </div>
+    </nav>
+
+    <main class="main">
+        <section class="content">
+            <section class="Hi" id="about">
+                <div>
+                    <p style="font-size:40px; font-weight: bold;margin-bottom: 0px;color:#476EAE">Hi, My name is</p>
+                    <p style="font-size:40px; font-weight: bold;margin-top: 0px;color:#476EAE">Runfeng Xiao</p>
+                    <p>I am currently a senior at University of Houston</p>
+                    <p>I am interested in front-end and IOS application developing</p>
+                </div>
+
+                <p>Here is my <a href="Runfeng Xiao Resume.pdf" download>Resume</a>, <a
+                        href="https://www.linkedin.com/in/wellwell wu-xiao-02737b201/"  target="_blank">Linkedin</a>, <a
+                        href="https://github.com/chihci"  target="_blank">Github</a>, and <a href="mailto:chunh@gmail.com">Email</a>.</p>
+
+            </section>
+
+
+
+            <section class="project" id="project">
+                <h1>My projects</h1>
+
+                <div class="tags">
+                    <div class="project-tag">
+                        <div class="project-tag-head">
+                            <h2>IOS App</h2>
+                            <p>Fall 2025</p>
+                            <p>Swift, SwiftUI</p>
+                        </div>
+
+                        <div class="project-tag-body">
+                            <p>In progress</p>
+                            <button onclick="window.open('https://github.com/chihci/Student-Management-System.git', '_blank')">View GitHub</button>
+                        </div>
+                    </div>
+
+                    <div class="project-tag">
+                        <div class="project-tag-head">
+                            <h2>Volunteer Management System</h2>
+                            <p>Summer 2025</p>
+                            <p>JavaScript, React, Vite, Flask, MySql</p>
+
+                        </div>
+
+                        <div class="project-tag-body">
+                            <p>A Full-Stack team project that allows user and admin to manage their information and
+                                events. </p>
+                            <button onclick="window.open('https://github.com/group-08-fullstack/volunteer-management-app.git', '_blank')">View GitHub</button>
+
+                        </div>
+
+                    </div>
+
+                    <div class="project-tag">
+                        <div class="project-tag-head">
+                            <h2>My Personal Website</h2>
+                            <p>Spring 2025</p>
+                            <p>JavaScript, Css, Html</p>
+
+                        </div>
+
+                        <div class="project-tag-body">
+                            <p>My first personal project. </p>
+                            <button onclick="window.open('https://github.com/chihci/Personal-Website.git', '_blank')">View GitHub</button>
+
+                        </div>
+
+                    </div>
+
+                    <div class="project-tag">
+                        <div class="project-tag-head">
+                            <h2>Student Management System</h2>
+                            <p>Fall 2023</p>
+                            <p>C++</p>
+
+                        </div>
+
+                        <div class="project-tag-body">
+                            <p>A project with text-based UI</p>
+                            <button onclick="window.open('https://github.com/chihci/Student-Management-System.git', '_blank')">View GitHub</button>
+
+                        </div>
+
+                    </div>
+            </section>
+
+
+
+            <section class="skills" id="skills">
+                <h1>My Skills</h1>
+                <ul>
+                    <li> <i class="fa-solid fa-code"></i> Languages: C++, Python, HTML, CSS, JavaScript, Swift</li>
+                    <li> <i class="fa-solid fa-laptop-code"></i> Frameworks & Libraries: React, Flask, SwiftUI</li>
+                    <li> <i class="fa-solid fa-database"></i> Databases & APIs: MySQL, MySQL Workbench, REST APIs</li>
+                    <li> <i class="fa-solid fa-wrench"></i> Developer Tools: Vite, Xcode, VS Code, GitHub, FileZilla,
+                        PuTTY</li>
+                    <li> <i class="fa-solid fa-briefcase"></i> Office & Productivity: Microsoft Word, Excel, PowerPoint
+                    </li>
+                </ul>
+            </section>
+
+
+            <section class="education" id="education">
+                <h1>My Education</h1>
+                <ul>
+                    <li>Bachelor of Computer Science, University of Houston </li>
+                    <li> Associate of Computer Science, Lone Star College </li>
+                </ul>
+                <p>Relevant Coursework: Programming and Data Structures, Fundamentals of Operating Systems, Algorithms
+                    and
+                    Data Structures, Software Design</p>
+            </section>
+
+
+
+
+
+
+
+        </section>
+
+    </main>
+
+    <script>
+
+    </script>
+
+</body>
+
+</html>
+
