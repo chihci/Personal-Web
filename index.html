@@ -4,7 +4,7 @@
 <html>
 
 <head>
-    <title>wellwell wu</title>
+    <title>Runfeng Xiao</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -73,6 +73,7 @@
             padding: 40px 0 180px 0;
             font-size: 22px;
             line-height: 1.9;
+
 
         }
 
@@ -191,6 +192,24 @@
             line-height: 3;
         }
 
+        .arrow {
+            font-size: 32px;
+            color: #476EAE;
+            animation: bounce 1.2s infinite;
+        }
+
+        @keyframes bounce {
+
+            0%,
+            100% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(8px);
+            }
+        }
+
         #project {
             scroll-margin-top: 80px;
         }
@@ -228,17 +247,37 @@
         <section class="content">
             <section class="Hi" id="about">
                 <div>
-                    <p style="font-size:40px; font-weight: bold;margin-bottom: 0px;color:#476EAE">Hi, My name is</p>
-                    <p style="font-size:40px; font-weight: bold;margin-top: 0px;color:#476EAE">Runfeng Xiao</p>
-                    <p>I am currently a senior at University of Houston</p>
-                    <p>I am interested in front-end and IOS application developing</p>
+                    <p style="font-size:40px; font-weight: bold;margin-bottom: 0px;color:black">Hello<span
+                            style="color:#0046FF">.</span> I am Runfeng Xiao<span style="color:#0046FF">.</span>👨‍💻
+                    </p>
+
+                    <p>I am currently a senior at the University of Houston.</p>
+                    <p>I am interested in frontend, backend, and IOS application development.</p>
                 </div>
 
                 <p>Here is my <a href="Runfeng Xiao Resume.pdf" download>Resume</a>, <a
-                        href="https://www.linkedin.com/in/wellwell wu-xiao-02737b201/"  target="_blank">Linkedin</a>, <a
-                        href="https://github.com/chihci"  target="_blank">Github</a>, and <a href="mailto:chunh@gmail.com">Email</a>.</p>
+                        href="https://www.linkedin.com/in/wellwell wu-xiao-02737b201/" target="_blank">Linkedin</a>, <a
+                        href="https://github.com/chihci" target="_blank">Github</a>, and <a
+                        href="mailto:chunh@gmail.com">Email</a>.</p>
+
+                <a href="#project" style="text-decoration:none; color:inherit;">
+                    <div style="text-align:center; margin-top:100px; margin-bottom:0px ; cursor:pointer;">
+                        <p style="font-size:20px; font-weight:500; margin-bottom:8px; color:#333;">
+                            View my projects
+                        </p>
+                        <div class="arrow" style="font-size:30px;">⮟</div>
+                    </div>
+                </a>
+
+
+
+
 
             </section>
+
+
+
+
 
 
 
@@ -248,14 +287,16 @@
                 <div class="tags">
                     <div class="project-tag">
                         <div class="project-tag-head">
-                            <h2>IOS App</h2>
+                            <h2>Personal Expense Tracker</h2>
                             <p>Fall 2025</p>
-                            <p>Swift, SwiftUI</p>
+                            <p>Swift, SwiftUI, Core Data</p>
                         </div>
 
                         <div class="project-tag-body">
-                            <p>In progress</p>
-                            <button onclick="window.open('https://github.com/chihci/Student-Management-System.git', '_blank')">View GitHub</button>
+                            <p>An IOS app that allows user to keep track of their daily expenses.</p>
+                            <button
+                                onclick="window.open('https://github.com/chihci/Personal-Expense-Tracker.git', '_blank')">View
+                                GitHub</button>
                         </div>
                     </div>
 
@@ -270,7 +311,9 @@
                         <div class="project-tag-body">
                             <p>A Full-Stack team project that allows user and admin to manage their information and
                                 events. </p>
-                            <button onclick="window.open('https://github.com/group-08-fullstack/volunteer-management-app.git', '_blank')">View GitHub</button>
+                            <button
+                                onclick="window.open('https://github.com/group-08-fullstack/volunteer-management-app.git', '_blank')">View
+                                GitHub</button>
 
                         </div>
 
@@ -285,8 +328,10 @@
                         </div>
 
                         <div class="project-tag-body">
-                            <p>My first personal project. </p>
-                            <button onclick="window.open('https://github.com/chihci/Personal-Website.git', '_blank')">View GitHub</button>
+                            <p>A Website that showcases the project I did and introduces myself.</p>
+                            <button
+                                onclick="window.open('https://github.com/chihci/Personal-Website.git', '_blank')">View
+                                GitHub</button>
 
                         </div>
 
@@ -301,8 +346,11 @@
                         </div>
 
                         <div class="project-tag-body">
-                            <p>A project with text-based UI</p>
-                            <button onclick="window.open('https://github.com/chihci/Student-Management-System.git', '_blank')">View GitHub</button>
+                            <p>A project with text-based UI. The system allows admins and users to log in and manage
+                                their data.</p>
+                            <button
+                                onclick="window.open('https://github.com/chihci/Student-Management-System.git', '_blank')">View
+                                GitHub</button>
 
                         </div>
 
@@ -315,10 +363,12 @@
                 <h1>My Skills</h1>
                 <ul>
                     <li> <i class="fa-solid fa-code"></i> Languages: C++, Python, HTML, CSS, JavaScript, Swift</li>
-                    <li> <i class="fa-solid fa-laptop-code"></i> Frameworks & Libraries: React, Flask, SwiftUI</li>
-                    <li> <i class="fa-solid fa-database"></i> Databases & APIs: MySQL, MySQL Workbench, REST APIs</li>
+                    <li> <i class="fa-solid fa-laptop-code"></i> Frameworks & Libraries: React, Flask, SwiftUI, Core
+                        Data, Swift Charts</li>
+                    <li> <i class="fa-solid fa-database"></i> Databases & APIs: MySQL, MySQL Workbench, REST APIs,
+                        SQLite</li>
                     <li> <i class="fa-solid fa-wrench"></i> Developer Tools: Vite, Xcode, VS Code, GitHub, FileZilla,
-                        PuTTY</li>
+                        PuTTY, Figma, Postman</li>
                     <li> <i class="fa-solid fa-briefcase"></i> Office & Productivity: Microsoft Word, Excel, PowerPoint
                     </li>
                 </ul>
@@ -328,8 +378,14 @@
             <section class="education" id="education">
                 <h1>My Education</h1>
                 <ul>
-                    <li>Bachelor of Computer Science, University of Houston </li>
-                    <li> Associate of Computer Science, Lone Star College </li>
+                    <li>Bachelor of Computer Science, University of Houston
+                        <span style="margin-left: 377px;">December 2025</span> </li>
+                    <li>
+                        Associate of Computer Science, Lone Star College
+                         <span style="margin-left: 400px;">September 2023</span>
+                    </li>
+                    
+
                 </ul>
                 <p>Relevant Coursework: Programming and Data Structures, Fundamentals of Operating Systems, Algorithms
                     and
@@ -353,4 +409,3 @@
 </body>
 
 </html>
-
